@@ -1,0 +1,2 @@
+# Artificial-Intelligence-and-Machine-Learning
+Artificial Intelligence and Machine Learning focuses on building systems that learn from data to make predictions and decisions. This course covers statistics, data preprocessing, supervised &amp; unsupervised learning, neural networks &amp; modern AI techniques like deep learning and NLP, with practical implementation using Python &amp; AI development tools
