@@ -1,0 +1,19 @@
+HTML - hypertext markup language
+<opening tag></closing tag>
+paragraph = <p></p>
+heading = <h></h> - six differert types if tag use <h with (1,2,3,4,5,6)> to mark heading size
+image = <img src=""></img>
+paragraph = <p></p> - used for connected info not for multi lines 
+BOLD  = <b></b>
+<ul>Unordered List</ul>
+<ol>Ordered List</ol>
+<ol type="A"></ol>
+attribute are used to add more information to the tag
+<a href="LINK">NAME</a> / href hypertext reference
+<img src="LINK" alt="used to define the image">
+<br> tag is used to break in line
+<b>Bold 
+<i>italic 
+<u>underline
+<!-- --> used for comments compiler ignore those line who are inside these arrow
+HTML is not a case sensitive language 
