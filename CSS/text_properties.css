@@ -1,0 +1,22 @@
+/* Properties 
+text-align":
+text-weight
+text-decore
+line-height
+letter-space
+font-size*/
+/* start & end -> this is for plain lang like english
+    in english it start form left to right
+    where as arbic start from right to left */
+h1 {
+    text-align: center;
+    /* border:solid;
+    width: 50%; */
+    /* text-align: right; */
+    /* text-align:left; */
+}
+h3{
+    text-align: center;
+}
+/* justify add space in the text */
+

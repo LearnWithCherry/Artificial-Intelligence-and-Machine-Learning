@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    text-decoration: red wavy underline;
+
+}
+h2{
+    text-align: center;
+    font-weight: normal;
+}
+h3{
+    text-align: center;
+    text-decoration: dotted rosybrown overline;
+}
+p{
+    line-height: 120%;
+    font-weight:400px; 
+    letter-spacing: 5px;
+}
+a{
+    text-decoration: none;
+}
