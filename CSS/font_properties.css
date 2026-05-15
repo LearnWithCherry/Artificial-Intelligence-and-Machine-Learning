@@ -1,11 +1,13 @@
 h1{
     text-align: center;
     text-decoration: red wavy underline;
-
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h2{
     text-align: center;
     font-weight: normal;
+    font-family: Impact;
 }
 h3{
     text-align: center;
@@ -15,7 +17,16 @@ p{
     line-height: 120%;
     font-weight:400px; 
     letter-spacing: 5px;
+    font-size: 18px;
 }
 a{
     text-decoration: none;
 }
+
+/* Font-size unit in CSS
+absolute - PX
+relative %,em,rem
+px is not used for responsive webside */
+/* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+the reason there are multiple font type because if browser does not suport there are some backup font */
+
