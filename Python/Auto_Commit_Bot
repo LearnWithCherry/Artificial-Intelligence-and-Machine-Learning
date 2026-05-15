@@ -1,0 +1,39 @@
+import os
+import subprocess
+
+# --- CONFIGURATION ---
+# Use the full path to your folder
+REPO_PATH = r"Folder Path" 
+SOURCE_FOLDER = os.path.join(REPO_PATH, "scripts_to_upload")
+LOG_FILE = os.path.join(REPO_PATH, "current_day.txt")
+
+def run_git(filename):
+    try:
+        os.chdir(REPO_PATH)
+        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "commit", "-m", f"Automated upload: {filename}"], check=True)
+        subprocess.run(["git", "push", "origin", "main"], check=True)
+    except Exception as e:
+        with open("error_log.txt", "a") as f:
+            f.write(f"Error: {str(e)}\n")
+
+if __name__ == "__main__":
+    if os.path.exists(LOG_FILE):
+        with open(LOG_FILE, "r") as f:
+            day = int(f.read().strip())
+        
+        if day <= 30:
+            target_file = f"code_{day}.py"
+            source_path = os.path.join(SOURCE_FOLDER, target_file)
+            
+            if os.path.exists(source_path):
+                # Move file to main repo area to 'activate' it
+                dest_path = os.path.join(REPO_PATH, target_file)
+                os.rename(source_path, dest_path)
+                
+                # Run Git commands
+                run_git(target_file)
+                
+                # Update the counter for the next day
+                with open(LOG_FILE, "w") as f:
+                    f.write(str(day + 1))
