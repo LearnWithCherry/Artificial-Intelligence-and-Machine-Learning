@@ -13,4 +13,30 @@ p1{
 button{
     color : gold;
     background-color: burlywood;
+} 
+*{ /*Universal selector*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: aquamarine; */
+}
+a{
+    color: cornflowerblue;
+}
+/* Elemnt selector */
+h3{
+    color: plum;
+}
+/* to give same properties to different tags use comma in between */
+h1{
+        color: #b92b27;
+}
+/* ID selector */
+#login{
+    background-color: burlywood;
+    color: rgb(255, 255, 255);
+}
+#signup{
+    background-color: burlywood;
+}
+.upvote{
+    background-color: greenyellow;
 }
