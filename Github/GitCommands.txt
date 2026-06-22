@@ -1,0 +1,258 @@
+==============================
+GitHub Upload Guide using VS Code Terminal
+==============================
+
+
+1. Move to Project Folder
+------------------------------
+
+Command:
+cd drive name:\Folder name\file name
+
+Explanation:
+Moves terminal to your project folder.
+
+Common Error:
+Cannot find path
+
+Fix:
+Check folder path spelling carefully.
+
+
+==============================
+
+
+2. Initialize Git Repository
+------------------------------
+
+Command:
+git init
+
+Explanation:
+Creates a Git repository inside the folder.
+
+Common Error:
+detected dubious ownership
+
+Fix Command:
+git config --global --add safe.directory X:/VScode/JAVA
+
+
+==============================
+
+
+3. Add Specific File
+------------------------------
+
+Command:
+git add file_name.extension
+
+Explanation:
+Adds only file_name.extension to Git staging area.
+
+Problem:
+Extra files added accidentally.
+
+Fix Commands:
+git reset
+git add file_name.extension
+
+
+==============================
+
+
+4. Check Git Status
+------------------------------
+
+Command:
+git status
+
+Explanation:
+Shows:
+- staged files
+- modified files
+- untracked files
+
+Correct Output Example:
+
+Changes to be committed:
+    new file: file_name.extension
+
+==============================
+
+
+5. Commit Code
+------------------------------
+
+Command:
+git commit -m "Added file breif"
+
+Explanation:
+Creates a local save point (commit).
+
+Common Error:
+nothing to commit
+
+Fix:
+Run:
+git add filename
+
+Then commit again.
+
+
+==============================
+
+
+6. Connect GitHub Repository
+------------------------------
+
+Command:
+git remote add origin https://github.com/LearnWithCherry/repository_name.git
+
+Explanation:
+Connects local folder with GitHub repository.
+
+Common Error:
+remote origin already exists
+
+Fix:
+Ignore it OR run:
+git remote remove origin
+
+
+==============================
+
+
+7. Pull Existing GitHub Data
+------------------------------
+
+Command:
+git pull origin main --allow-unrelated-histories
+
+Explanation:
+Downloads existing repo files before push.
+
+If Vim Opens:
+
+Step 1:
+Press Esc
+
+Step 2:
+Type:
+:wq
+
+Step 3:
+Press Enter
+
+
+==============================
+
+
+8. Push Code to GitHub
+------------------------------
+
+Command:
+git push -u origin main
+
+Explanation:
+Uploads your code to GitHub repository.
+
+Common Error:
+rejected (fetch first)
+
+Fix Commands:
+git pull origin main --allow-unrelated-histories
+
+Then:
+git push -u origin main
+
+
+==============================
+
+
+9. Daily Workflow
+------------------------------
+
+After editing files use:
+
+git add .
+
+git commit -m "Updated project"
+
+git push
+
+
+==============================
+
+
+10. Useful Git Commands
+------------------------------
+
+Check status:
+git status
+
+Check commit history:
+git log
+
+Check connected GitHub repo:
+git remote -v
+
+Remove staged files:
+git reset
+
+Remove remote repo:
+git remote remove origin
+
+
+==============================
+
+
+11. Professional Folder Structure
+------------------------------
+
+Recommended Structure:
+
+JAVA/
+ ├── ATM_Project/
+ │    └── ATM.java
+ ├── Practice/
+ ├── Notes/
+ └── Other_Projects/
+
+Initialize Git ONLY inside project folders.
+
+Correct Example:
+
+cd X:\VScode\JAVA\ATM_Project
+
+git init
+
+
+==============================
+
+
+12. Complete Workflow Example
+------------------------------
+
+cd X:\VScode\JAVA
+
+git init
+
+git config --global --add safe.directory X:/VScode/JAVA
+
+git add ATM.java
+
+git status
+
+git commit -m "Added ATM Java project"
+
+git remote add origin https://github.com/LearnWithCherry/Basic-Projects.git
+
+git pull origin main --allow-unrelated-histories
+
+git push -u origin main
+
+
+==============================
+END OF GUIDE
+==============================
