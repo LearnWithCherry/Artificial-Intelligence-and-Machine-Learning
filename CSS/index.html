@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Chapter2</title>
+  </head>
+  <body>
+    <header>
+        <h1>Quora 
+            <button id="login">Log in</button>
+            <button id="signup">Sign up</button>
+        </h1>
+        <div>
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/following">Following</a></li>
+                <li><a href="/answer">Answer</a></li>
+                <li><a href="/spaces">Spaces</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <div>
+        <p class="post">
+        Adam &nbsp;&nbsp;
+        <a class="follow" href="/adam">Follow /abc</a></span>
+        </p>
+        <h3>What is the highest salary for a spacex engineer?</h3>
+        <span>
+            <button class="upvote" > +upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
 
-    <link rel="stylesheet" href="font_properties.css">
-</head>
-    <h1>Iron Man</h1>
-    <hr/>
-    <a href="Google.com">Google me</a>
-    <p>
-        Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name. 
-        Produced by Marvel Studios and distributed by Paramount Pictures,[a] it is the first film in the Marvel Cinematic Universe (MCU). 
-        Directed by Jon Favreau and written by the teams of Mark Fergus & Hawk Ostby and Art Marcum & Matt Holloway, the film stars Robert Downey Jr.
-         as Tony Stark / Iron Man alongside Terrence Howard, Jeff Bridges, Gwyneth Paltrow, Leslie Bibb, and Shaun Toub. 
-         In the film, world-famous industrialist and master engineer Stark builds a mechanized suit of armor to escape from captivity by a terrorist group, 
-         and then uses it to become the superhero Iron Man.
-    </p>
-    <h2>Publication History</h2>
-    <hr/>
-    <h3>Publication History</h3>
-    <p>Iron Man premiered in Sydney, Australia, on April 14,
-         2008, and was released in the United States on May 2 as the first film in Phase One of the MCU.
-          It was a commercial success, grossing over $585 million and becoming the eighth-highest grossing film of 2008. 
-          It also received positive reviews from critics, who praised Downey's performance and Favreau's balance of character development and special effects.
-           Iron Man was nominated for Best Sound Editing and Best Visual Effects at the 81st Academy Awards, among numerous other accolades, and was named one of the ten best films of the year by the American Film Institute. 
-           In 2022, the Library of Congress selected the film for preservation in the United States National Film Registry for being "culturally, historically, or aesthetically significant".
-         Two sequels have been released: Iron Man 2 (2010) and Iron Man 3 (2013).</p>
-<body>
+        <p class="post">
+        Bob &nbsp;&nbsp;
+        <a class="follow" href="/bob">Follow xyz</a>
+        </p>
+        <h3>What is the syllabus for JEE 2024?</h3>
+        <span>
+            <button class="upvote" > +upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
 
-</body>
+        <p class="post">
+        Catlyn &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="follow" href="/catlyn">Follow pqr</a>
+        </p>
+        <h3>Why is the sky blue?</h3>
+        <span>
+            <button class="upvote" > +upvote</button>
+            <button>answer</button>
+        </span>
+        <hr />
+
+        <p class="post">
+            Dan &nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="follow" href="/dan">Follow pqr</a>
+            </p>
+            <h3>Why is the sky blue?</h3>
+            <span>
+                <button class="upvote" > +upvote</button>
+                <button>answer</button>
+            </span>
+            <hr />
+        <div>
+            <input type="radio" id="yes" name="agreement">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="agreement">
+            <label for="no">No</label>
+        </div>
+        </div>
+    </main>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-h1{
+/* h1{
     color : red;
     background-color: antiquewhite;
 }
@@ -13,7 +13,7 @@ p1{
 button{
     color : gold;
     background-color: burlywood;
-} 
+} */
 *{ /*Universal selector*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* background-color: aquamarine; */
@@ -39,4 +39,71 @@ h1{
 }
 .upvote{
     background-color: greenyellow;
+}
+
+.post a{
+    color: pink;
+    background-color: yellowgreen;
+}
+nav ul li a{
+    color: rgb(72, 172, 226)
+}
+
+p + h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    color: cornflowerblue;
+    background-color: aquamarine;
+}
+div > input{
+    background-color: gray;
+}
+
+input[type="text"]{
+    color: greenyellow;
+}
+input[type="password"]{
+    color: red;
+}
+
+input[type]{
+    background-color: ghostwhite
+}
+
+button:hover{
+    background-color: black;
+    color: beige;
+}
+
+h3:hover{
+    text-decoration: overline;
+}
+
+button:active{
+    background-color: darkorchid;
+}
+p:active{
+    font-weight: bold;
+    color:rgb(72, 172, 226);
+}
+
+input[type="radio"]:checked + label{
+    color:red;
+    background-color: antiquewhite;
+}
+
+
+div:nth-of-type(1){
+    background-color: whitesmoke;
+}
+
+h1::first-letter{
+    color: mediumaquamarine;
+}
+h3::first-line{
+    color: aquamarine;
+}
+p::selection{
+    background-color: rgb(244, 244, 165);
 }
