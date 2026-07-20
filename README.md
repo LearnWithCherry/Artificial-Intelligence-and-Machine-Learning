@@ -1,4 +1,4 @@
-# Artificial Intelligence and Machine Learning
+# Artificial Intelligence and Machine Learning 
 
 This repository documents my journey through Artificial Intelligence and Machine Learning, focusing on building systems that learn from data to make intelligent predictions and decisions. The curriculum covers everything from foundational statistics and data preprocessing to advanced neural networks, deep learning, and Natural Language Processing (NLP).
 
