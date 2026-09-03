@@ -1,0 +1,14 @@
+New project → GitHub
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <github-repo-url>
+git push -u origin main
+
+----------------------------------------------
+Everyday workflow
+git pull
+git add .
+git commit -m "update"
+git push
