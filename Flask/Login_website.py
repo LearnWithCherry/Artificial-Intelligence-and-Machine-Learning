@@ -1,29 +1,38 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")
 
-@app.route("/") #! - http://127.0.0.1:5000/
+
+@app.route("/") #? Running on http://127.0.0.1:5000/
 def login():
     return render_template("login.html")
 
 
-@app.route("/form") #! - http://127.0.0.1:5000/form
+@app.route("/form") #? Running on http://127.0.0.1:5000/form
 def form():
     return render_template("form.html")
 
 
-@app.route("/thankyou", methods=["GET","POST"]) #! - http://127.0.0.1:5000/thankyou
+@app.route("/thankyou", methods=["GET", "POST"]) #? Running on http://127.0.0.1:5000/form
 def thank():
-    return render_template("thankyou.html")
+    if request.method == "POST":
+        name = request.form["name"]
+        email = request.form["email"]
+        age = request.form["age"]
+        city = request.form["city"]
+
+        return render_template("thankyou.html", name=name)
+
+    return render_template("thankyou.html", name="<3")
 
 
-@app.route("/resubmit") #! - http://127.0.0.1:5000/resubmit
+@app.route("/resubmit")  #? Running on http://127.0.0.1:5000/resubmit
 def resubmit():
     return render_template("resubmit.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
 
 
-
-# ! TO run the flask file -  flask --app application run --debug
+# ! To run:  flask --app Login_website run --debug
