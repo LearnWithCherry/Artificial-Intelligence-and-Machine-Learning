@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+
 <head>
     <title>Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <script>src="static/app.js"</script>
 </head>
-<body>
 
     <h1>Registration Form</h1>
 
-    <form action="/thankyou" method="POST">
+    <form action="/thankyou" method="POST"> 
 
         <label>Name:</label>
         <input type="text" name="name" required>

@@ -1,0 +1,50 @@
+/* Styles for resubmit.html */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+body > * {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+p {
+    margin: 0 0 24px;
+    color: #64748b;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 8px;
+    background: #0f766e;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #115e59;
+}
