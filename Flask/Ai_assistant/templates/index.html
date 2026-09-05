@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1 class="Main-Heading">AI Personal Assistant</h1>
+
+    <div class="container">
+
+        <h2>Ask Anything</h2>
+
+        <form id="askForm">
+
+            <input
+                type="text"
+                name="question"
+                placeholder="Ask your Query"
+                required
+            >
+
+            <button type="submit">
+                Ask
+            </button>
+
+        </form>
+
+        <p id="ask-loading" style="display: none;">
+            Processing.....
+        </p>
+
+        <p id="answer"></p>
+
+    </div>
+
+
+    <script>
+
+        document.getElementById("askForm").onsubmit = async (e) => {
+
+            e.preventDefault();
+
+            let formData = new FormData(e.target);
+
+            let loading = document.getElementById("ask-loading");
+
+            loading.style.display = "block";   // show loader
+
+
+            let res = await fetch("/ask", {
+
+                method: "POST",
+
+                body: formData
+
+            });
+
+
+            let data = await res.json();
+
+            document.getElementById("answer").innerText = data.response;
+
+
+            loading.style.display = "none";   // hide loader
+
+        };
+
+    </script>
+
+</body>
+
+</html>
