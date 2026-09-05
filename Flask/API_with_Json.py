@@ -9,7 +9,5 @@ def Hello_world():
     }
     return jsonify(data), 200
 
-
-
 if __name__ == "__main__":
     app.run(debug=True)

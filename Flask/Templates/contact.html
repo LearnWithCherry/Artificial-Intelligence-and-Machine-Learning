@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+<!-- Customizations -->
+
+{% block title %}Contact Page{% endblock %}
+
+
+{% block content %}
+  <h1>This is the contact Page.</h1>
+  <p>Welcome on my contact page.</p>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+
+{% endblock %}
+
+{% block footer %}
+&copy; Copyright 2010 by <a href="http://LearnWithCherry.in">LearnWithCherry</a>.
+{% endblock %}
